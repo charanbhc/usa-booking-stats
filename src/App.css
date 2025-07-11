@@ -1,0 +1,51 @@
+.App {
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #1f4e79;
+}
+
+.table-section {
+  margin-bottom: 50px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.header {
+  background-color: #1f4e79;
+  color: white;
+  font-weight: bold;
+}
+
+tr:nth-child(even):not(.header) {
+  background-color: #f2f2f2;
+}
+
+.th {
+  font-weight: bold;
+}
