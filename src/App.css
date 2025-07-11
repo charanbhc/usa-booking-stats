@@ -1,9 +1,7 @@
-/* App.css */
-
 .App {
   font-family: Arial, sans-serif;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #f4f6f8;
   color: #333;
   max-width: 960px;
   margin: auto;
@@ -11,125 +9,72 @@
 
 h1 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #1f4e79;
-  font-size: 2rem;
-}
-
-.dropdown-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 30px;
-  width: 100%;
-  max-width: 400px;
-  padding: 0 10px;
-}
-
-.dropdown-container label {
-  margin-bottom: 8px;
-  font-weight: 500;
-}
-
-#date-select {
-  padding: 8px 12px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
-  width: 100%;
-  box-sizing: border-box;
+  font-size: 1.8rem;
 }
 
 .table-section {
-  margin-bottom: 20px;
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+  background: #fcfcfd;
+  padding: 12px 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   overflow-x: auto;
 }
 
 h2 {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   color: #333;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 table {
   width: 100%;
-  min-width: 300px; /* reduced from 400px for better mobile */
+  min-width: 300px;
   border-collapse: collapse;
 }
 
 th,
 td {
-  padding: 12px;
+  padding: 6px 8px;
   text-align: center;
   border: 1px solid #ccc;
+  font-size: 0.85rem;
   word-break: break-word;
 }
 
 .header {
-  background-color: #1f4e79;
-  color: white;
+  background-color: #2a5877;
+  color: #f0f4f8;
   font-weight: bold;
 }
 
 tr:nth-child(even):not(.header) {
-  background-color: #f2f2f2;
+  background-color: #f7f9fb;
 }
 
 .th {
   font-weight: bold;
 }
 
-/* Scroll table horizontally on smaller devices */
 @media (max-width: 600px) {
-  table {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-    padding: 0 10px;
-  }
-
-  #date-select {
-    font-size: 0.9rem;
-    padding: 6px 10px;
-  }
-
-  .table-section {
-    padding: 14px;
-  }
-
-  th,
-  td {
-    padding: 10px;
-    font-size: 0.9rem;
-  }
-}
-
-/* Extra small phones */
-@media (max-width: 400px) {
   h1 {
     font-size: 1.3rem;
   }
 
   #date-select {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     padding: 6px 10px;
-  }
-
-  .table-section {
-    padding: 10px;
   }
 
   th,
   td {
-    padding: 8px;
-    font-size: 0.8rem;
+    padding: 6px 8px;
+    font-size: 0.85rem;
+  }
+
+  .table-section {
+    padding: 10px 12px;
   }
 }
