@@ -145,12 +145,7 @@ function App() {
 
   return (
     <div className="App">
-    <h1>
-  HHVM USA Bookings 
-  <a href="https://twitter.com/TeluguHarry" target="_blank" rel="noopener noreferrer">
-     @TeluguHarry
-  </a>
-</h1>
+      <h1>🎟️ HHVM USA Bookings @TeluguHarry</h1>
 
       <div className="dropdown-container">
         <label htmlFor="date-select">Select Date: </label>
