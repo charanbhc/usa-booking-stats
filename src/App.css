@@ -21,6 +21,9 @@ h1 {
   flex-direction: column;
   align-items: center;
   margin-bottom: 30px;
+  width: 100%;
+  max-width: 400px;
+  padding: 0 10px;
 }
 
 .dropdown-container label {
@@ -33,10 +36,12 @@ h1 {
   border-radius: 6px;
   border: 1px solid #ccc;
   font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .table-section {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   background: white;
   padding: 20px;
   border-radius: 12px;
@@ -52,7 +57,7 @@ h2 {
 
 table {
   width: 100%;
-  min-width: 400px;
+  min-width: 300px; /* reduced from 400px for better mobile */
   border-collapse: collapse;
 }
 
@@ -61,6 +66,7 @@ td {
   padding: 12px;
   text-align: center;
   border: 1px solid #ccc;
+  word-break: break-word;
 }
 
 .header {
@@ -77,7 +83,14 @@ tr:nth-child(even):not(.header) {
   font-weight: bold;
 }
 
+/* Scroll table horizontally on smaller devices */
 @media (max-width: 600px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
   h1 {
     font-size: 1.5rem;
     padding: 0 10px;
@@ -85,15 +98,38 @@ tr:nth-child(even):not(.header) {
 
   #date-select {
     font-size: 0.9rem;
+    padding: 6px 10px;
   }
 
   .table-section {
-    padding: 16px;
+    padding: 14px;
   }
 
   th,
   td {
     padding: 10px;
     font-size: 0.9rem;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  #date-select {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+
+  .table-section {
+    padding: 10px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    font-size: 0.8rem;
   }
 }
